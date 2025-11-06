@@ -45,14 +45,14 @@ builder.Services.AddSwaggerGen(options =>
     options.SwaggerDoc("v1",
         new OpenApiInfo
         {
-            Title = "ACME.LearningCenterPlatform.API",
+            Title = "Desarrollo de Proyecto Personal",
             Version = "v1",
-            Description = "ACME Learning Center Platform API",
-            TermsOfService = new Uri("https://acme-learning.com/tos"),
+            Description = "Este es un proyecto del curso de aplicaciones web de la UPC",
+            TermsOfService = new Uri("https://github.com/velardesoft"),
             Contact = new OpenApiContact
             {
-                Name = "ACME Studios",
-                Email = "contact@acme.com"
+                Name = "Néstor Velarde Gonzales",
+                Email = "u20211c221@upc.edu.pe"
             },
             License = new OpenApiLicense
             {
