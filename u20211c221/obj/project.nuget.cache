@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gAjk2wLPCmo=",
+  "dgSpecHash": "D0rAVEZQYyU=",
   "success": true,
-  "projectFilePath": "D:\\python\\aplicaciones-web\\u20211c221\\u20211c221.csproj",
+  "projectFilePath": "D:\\angel\\aplicaciones-web-shared123-practice\\u20211c221\\u20211c221.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USUARIO\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",

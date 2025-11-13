@@ -1,5 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using u20211c221.Customers.Application.Internal.CommandServices;
+using u20211c221.Customers.Application.Internal.QueryServices;
+using u20211c221.Customers.Domain.Repositories;
+using u20211c221.Customers.Domain.Services;
+using u20211c221.Customers.Infrastructure.Persistence.EFC.Repositories;
 using u20211c221.Shared.Domain.Repositories;
 using u20211c221.Shared.Infrastructure.Interfaces.ASP.Configuration;
 using u20211c221.Shared.Infrastructure.Persistence.EFC.Configuration;
@@ -87,6 +92,9 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 // Dependency Injection
+builder.Services.AddScoped<IClientRepository, ClientRepository>();
+builder.Services.AddScoped<IClientCommandService, ClientCommandService>();
+builder.Services.AddScoped<IClientQueryService, ClientQueryService>();
 
 // Shared Bounded Context
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();

@@ -1,5 +1,6 @@
 using EntityFrameworkCore.CreatedUpdatedDate.Extensions;
 using Microsoft.EntityFrameworkCore;
+using u20211c221.Customers.Infrastructure.Persistence.EFC.Configurations.Extensions;
 using u20211c221.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
 
 namespace u20211c221.Shared.Infrastructure.Persistence.EFC.Configuration;
@@ -48,7 +49,7 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
         //builder.ApplyProfilesConfiguration();
         
         // IAM Context
-        //builder.ApplyIamConfiguration(); 
+        builder.ApplyClientsConfigurations();
         
         // General Naming Convention for the database objects
         builder.UseSnakeCaseNamingConvention();
